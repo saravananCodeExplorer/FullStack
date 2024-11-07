@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <title>React App</title>
+  </head>
+  <body>
+  <button id="btn">Click Me!! </button>
+  <h1 id="myheading">H1 heading tag</h1>
+  <div id="mydiv">Its div tag</div>
+  <p>in Regular Function the<b>this</b> Keyword Represents: </p>
+  <p id="demo"></p>
+
+  </body>
+  <script>
+    class RegvsArr
+    {
+      changeColor = () =>
+      {
+        document.getElementById("demo").innerHTML += this;
+      }
+    }
+    var regvsarr=new RegvsArr();
+    //this window object calls the function
+    window.addEventListener("load",regvsarr.changeColor);
+     //this window object calls the function
+    document.getElementById("mydiv").window.addEventListener("click",regvsarr.changeColor);
+    //this window object calls the function
+    document.getElementById("myheading").window.addEventListener("click",regvsarr.changeColor);
+    </script>
+
+</html>
